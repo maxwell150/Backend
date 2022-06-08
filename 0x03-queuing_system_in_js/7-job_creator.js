@@ -1,3 +1,13 @@
+/*
+create array jobs with data given
+Create a queue with Kue
+Write a loop that will go through the array jobs and for each object:
+Create a new job to the queue push_notification_code_2 with the current object
+If there is no error, log to the console Notification job created: JOB_ID
+On the job completion, log to the console Notification job JOB_ID completed
+On the job failure, log to the console Notification job JOB_ID failed: ERROR
+On the job progress, log to the console Notification job JOB_ID PERCENTAGE% complete
+*/
 import kue from 'kue';
 
 const jobs = [
